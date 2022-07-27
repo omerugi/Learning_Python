@@ -60,69 +60,69 @@ if __name__ == '__main__':
     import sys
     import traceback
 
-    # # Non-specific errors
-    # try:
-    #     z
-    # except:
-    #     traceback.print_exc()
-    #
-    # try:
-    #     print(banana)
-    # except Exception as e:
-    #     print(e.with_traceback(sys.exc_info()[2]))
-    #
-    # print("We made it all the way here!")
-    #
-    # # Specific errors
-    # try:
-    #     # _y = 1 / 0
-    #     y = test
-    # except ZeroDivisionError:
-    #     print("div by zero")
-    #     traceback.print_exc()
-    # except:
-    #     print("whatever")
-    #     traceback.print_exc()
-    #
-    # print("We made it again!")
-    #
-    # # Custom errors
-    #
-    # try:
-    #     x = 11
-    #     if type(x) != str:
-    #         raise Exception("The variables type was wrong")
-    # except:
-    #     traceback.print_exc()
-    #
-    # try:
-    #     x = 11 / 0
-    # except:
-    #     print(Exception("The variables type was wrong "))
+    # Non-specific errors
+    try:
+        z
+    except:
+        traceback.print_exc()
 
-    # print('''<<<<<< Types & Typing >>>>>>''')
-    # _string = "Hey!"  # Store text
-    # _num = 1  # Store natural numbers
-    # _flo = 1.2  # Store numbers with decimal point
-    # _boole = True or False  # Store true / false
-    #
-    # # To make variable clearer we can use typing:
-    # string: str = "Hey!"  # Store text
-    # num: int = 1  # Store natural numbers
-    # flo: float = 1.2  # Store numbers with decimal point
-    # boole: bool = True or False  # Store true / false
-    #
-    # # NoneType
-    # none = None  # This an empty var
+    try:
+        print(banana)
+    except Exception as e:
+        print(e.with_traceback(sys.exc_info()[2]))
 
-    # # Many Values to Multiple Variables
-    # i, j, q = "Orange", "Banana", "Cherry"
-    # print(i, j, q)
-    #
-    # # One Value to Multiple Variables
-    # s = w = v = "Orange"
-    # print(s, w, v)
-    #
+    print("We made it all the way here!")
+
+    # Specific errors
+    try:
+        # _y = 1 / 0
+        y = test
+    except ZeroDivisionError:
+        print("div by zero")
+        traceback.print_exc()
+    except:
+        print("whatever")
+        traceback.print_exc()
+
+    print("We made it again!")
+
+    # Custom errors
+
+    try:
+        x = 11
+        if type(x) != str:
+            raise Exception("The variables type was wrong")
+    except:
+        traceback.print_exc()
+
+    try:
+        x = 11 / 0
+    except:
+        print(Exception("The variables type was wrong "))
+
+    print('''<<<<<< Types & Typing >>>>>>''')
+    _string = "Hey!"  # Store text
+    _num = 1  # Store natural numbers
+    _flo = 1.2  # Store numbers with decimal point
+    _boole = True or False  # Store true / false
+
+    # To make variable clearer we can use typing:
+    string: str = "Hey!"  # Store text
+    num: int = 1  # Store natural numbers
+    flo: float = 1.2  # Store numbers with decimal point
+    boole: bool = True or False  # Store true / false
+
+    # NoneType
+    none = None  # This an empty var
+
+    # Many Values to Multiple Variables
+    i, j, q = "Orange", "Banana", "Cherry"
+    print(i, j, q)
+
+    # One Value to Multiple Variables
+    s = w = v = "Orange"
+    print(s, w, v)
+
     print('''<<<<<< Types Functions >>>>>>''')
     # We can add together same types of vars
     x: int = 3

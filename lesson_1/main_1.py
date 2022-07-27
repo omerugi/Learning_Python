@@ -16,6 +16,7 @@ if __name__ == '__main__':
     print("Third task:")
     name_3 = input("what is you'r name")
     age_3 = input("what is you'r age?")
+    print(type(age_3))
     print(name_3, age_3)
 
 
